@@ -1,0 +1,23 @@
+{
+  "name": "covidtracker",
+  "version": "1.0.0",
+  "description": "covid tracker for school project",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bryce",
+  "license": "MIT",
+  "dependencies": {
+    "@craco/craco": "^6.1.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.36",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
+  },
+  "proxy": "http://127.0.0.1:5000"
+}
