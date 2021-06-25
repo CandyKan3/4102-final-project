@@ -16,9 +16,18 @@ router.post("/getcoviddata", function (req, res, next) {
   request(options, function (error, response) {
     if (error) throw new Error(error);
     console.log(response.body);
+    var a = JSON.parse(response.body);
     console.log("Searching for", req.body.currstate);
+    for (state in a) {
+      console.log(a[state]);
+      if (a[state].state == req.body.currstate) {
+        //in the state we want data from
+        res.send({ covidcases: a[state].positive });
+
+        break;
+      }
+    }
   });
-  res.send({ covidcases: "testing" });
 });
 
 app.use("/api", router);

@@ -45,7 +45,7 @@ export default function Test() {
                                         Please enter your state:
                                     </label>
                                     <div class="mt-1">
-                                        <input type="text" name="state" id="state" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="North Carolina" value={currentstate}
+                                        <input type="text" name="state" id="state" class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="NC" value={currentstate}
                                             onChange={(e) => setCurrentState(e.target.value)}></input>
                                     </div>
  
